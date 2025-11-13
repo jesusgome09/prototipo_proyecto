@@ -1,0 +1,10 @@
+{
+    "reportes": [
+        {
+            "url": "http://sitiopeligroso.com",
+            "nombre": "Pedro",
+            "correo": "ppedro@com.com",
+            "motivo": "Phishing"
+        }
+    ]
+}

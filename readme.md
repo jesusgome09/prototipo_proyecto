@@ -10,3 +10,6 @@ Nombre dado por mi: SafeUrl
 ### Correr Proyecto Flask
 `python -m flask --debug  run`
 
+### Link de la App Web
+
+`https://prototipo-proyecto.vercel.app/`

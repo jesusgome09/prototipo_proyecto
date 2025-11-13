@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <style>
-        /* Estilos generales */
+        
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f7f9;
@@ -15,7 +15,7 @@
             text-align: center;
         }
 
-        /* Encabezados principales */
+        
         h1 {
             color: #2c3e50;
             padding-top: 40px;
@@ -31,7 +31,7 @@
             font-size: 1.1em;
         }
 
-        /* Estilos del panel de escaneo */
+        
         #panel {
             background-color: #ffffff;
             border-radius: 10px;
@@ -52,7 +52,7 @@
             text-align: center;
         }
 
-        /* Estilos del formulario */
+        
         form {
             display: flex;
             flex-direction: column;
@@ -99,7 +99,7 @@
             transform: translateY(0);
         }
 
-        /* Estilos del pie de página */
+        
         footer {
             margin-top: 50px;
             padding: 20px 0;
@@ -107,6 +107,9 @@
             color: #ecf0f1;
             font-size: 0.9em;
             width: 100%;
+
+            position: fixed;
+            bottom: 0;
         }
 
         footer p {
@@ -120,6 +123,9 @@
 
     <div id="panel">
         <h2>Escanear Url</h2>
+        {% if reporte %}
+            <h3>Url reportada exitosamente.</h3>
+        {% endif %}
         <form action="/scan" method="post">
             <label for="url">Url:</label>
             <input type="text" id="url" name="url" placeholder="Ingrese la URL aquí" required>
