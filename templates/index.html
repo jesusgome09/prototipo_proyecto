@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Encabezados principales */
+        h1 {
+            color: #2c3e50;
+            padding-top: 40px;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+
+        h3 {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        /* Estilos del panel de escaneo */
+        #panel {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 25px;
+            text-align: left;
+        }
+
+        #panel h2 {
+            color: #3498db;
+            margin-top: 0;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Estilos del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: -5px;
+        }
+
+        input[type="text"] {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        button[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s, transform 0.1s;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #27ae60;
+            transform: translateY(-2px);
+        }
+
+        button[type="submit"]:active {
+            transform: translateY(0);
+        }
+
+        /* Estilos del pie de página */
+        footer {
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            font-size: 0.9em;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>SafeUrl</h1>
+    <h3>Esta bien confiar, mal esta en confiar de mas. -Jesus Gomez-</h3>
+
+    <div id="panel">
+        <h2>Escanear Url</h2>
+        <form action="/scan" method="post">
+            <label for="url">Url:</label>
+            <input type="text" id="url" name="url" placeholder="Ingrese la URL aquí" required>
+            <button type="submit">Escanear</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SafeUrl. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
